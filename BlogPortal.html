@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #0000FF;
+  border: none;
+  color: #DAA520;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white; 
+  color: black; 
+}
+
+.button1 {background-color: #0000FF; color: #DAA520} /* for JBS */
+.button2 {background-color: #DC143C; color: #DAA520} /* for JCS */
+.button3 {background-color: #8B008B; color: #C0C0C0} /* for JRS */ 
+.button4 {background-color: #FF8C00; color: #663399;} /* for SS by JBM */ 
+.button5 {background-color: #32CD32; color: #FFFAFA} /* for JLS */
+
+.button1:hover {background-color: #DAA520; color: #0000FF} /* for JBS (when hovered) */
+.button2:hover {background-color: #DAA520; color: #DC143C} /* for JCS (when hovered) */
+.button3:hover {background-color: #C0C0C0; color: #8B008B} /* for JRS (when hovered) */ 
+.button4:hover {background-color: #FFFAFA; color: #FF8C00;} /* for SS by JBM (when hovered) */ 
+.button5:hover {background-color: #FFFAFA; color: #32CD32} /* for JLS (when hovered) */
+
+header {
+	background-color: #1a1a1a;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 550px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+	background-color: #708090;
+	padding: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .column {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+	<h1>John's Blogging Universe</h1>
+	<p>Welcome to my universe of blogging!  Click on the "Visit ___" to access any of my blogs.  Where can I take you?</p>
+	<p>(NOTE: Each button opens a new tab or window upon clicking)</p>	
+</header>
+
+<script>
+function buttonTest() {
+  window.open("https://www.google.com/");
+function toJBS() {
+  window.open("https://johnbmarine.blogspot.com/");
+}
+function toJCS() {
+  window.open("https://johnscreativespace.blogspot.com/");
+}
+function toJRS() {
+  window.open("https://johnsgtspace.blogspot.com/");
+}
+function toSS() {
+  window.open("https://stylespacebyjbm.blogspot.com/");
+}
+function toJLS() {
+  window.open("https://johnslifespace.blogspot.com/");
+}
+</script>
+
+<div class="row">
+  <div class="column" style="background-color:#00008B;">
+    <h2 style="color: #DAA520;text-align: center;">John's Blog Space</h2>
+    <p style="color: #DAA520;">"John's Blog Space" is my main blog featuring a garden variety of topics.  This is more of a personal blog than any niche blog.  It has helped define me on the Internet since 2009.  The blog is about two things- anything and everything!</p><br>
+    <button class="button button1" onclick="toJBS()">Visit JBS!</button><br>    
+  </div>
+  <div class="column" style="background-color:#8B0000;">
+    <h2 style="color: #DAA520;text-align: center;">John's Creative Space</h2>
+    <p style="color: #DAA520;">To showcase my creative works as well as offer general thoughts on creative works, I have created "John's Creative Space."  Here you will get a general look at my creative works ranging from art to music and more.</p><br>
+    <button class="button button2" onclick="toJCS()">Visit JCS!</button>
+  </div>
+  <div class="column" style="background-color:#4B0082;">
+    <h2 style="color: #C0C0C0;text-align: center;">John's Race Space</h2>
+    <p style="color: #C0C0C0;">"John's Race Space" is a blog devoted entirely to racing/driving games.  Once devoted to the likes of the Gran Turismo&#169 series; and Tourist Trophy&#169;, it was formerly known as "John's Gran Turismo Space."  This blog has since been a blog to discuss racing and driving games in general as well as elements of such games.  Fans of the genre are invited to visit and interact with this blog.  Those wanting to know more about such racing and driving games are also invited.</p><br>
+    <button class="button button3" onclick="toJRS()">Visit JRS!</button>
+  </div>
+    <div class="column" style="background-color:#663399;">
+    <h2 style="color: #DAA520;text-align: center;">StyleSpace, by John B. Marine</h2>
+    <p style="color: #DAA520;">"StyleSpace, by John B. Marine," or "StyleSpace by JBM" for short, is my blog pertaining to fashion and beauty.  I am no expert in fashion, and my blog is not like any other in discussing fashion.  That's why I call it my "non-traditional" fashion blog.  I don't do fashion outfit posts, I don't host giveaways, I do not really share fashion advice... at the end of the day, though, you get the sort of fashion commentary only I can provide in the way only I can present it.  Give my fashion/beauty blog a try.  You might like the experience!  Hopefully, anyways...</p><br>
+    <button class="button button4" onclick="toSS()">Visit SS by JBM!</button>
+  </div>
+    <div class="column" style="background-color:#00BFFF;">
+    <h2 style="color: #FFFAFA;text-align: center;">John's Life Space</h2>
+    <p style="color: #FFFAFA;">Life happens.  If life were easy and if anyone could become a success, we would not need to offer life advice.  Since life is not fair, I created "John's Life Space" to discuss various life issues and offer help and hope to those who may otherwise need (or at least not mind) such support.  Visit JLS to gain my advice and insight to help make life better for you and others.</p><br>
+    <button class="button button5" onclick="toJLS()">Visit JLS!</button>
+  </div>
+</div>
+
+<button class="button" onclick="buttonTest()">Button Testing</button>
+    <!-- <button class="button" onclick="buttonTest()">Button Testing</button> -->
+
+<footer>
+	<div style="footer">	
+		<div class="footer">
+		<p>2019, John B. Marine.  All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
